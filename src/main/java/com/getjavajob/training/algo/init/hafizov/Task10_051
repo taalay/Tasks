@@ -1,0 +1,55 @@
+procedure1
+        call n=5 {
+            output 5;
+            call n=4 {
+               output 4
+               call n=3{
+                    output 3
+                    call n=2{
+                        output 2
+                        call n=1{
+                            output 1
+                        }
+                    }
+               }
+            }
+        }
+
+procedure2
+        call n=5{
+            call n=4{
+                call=3{
+                    call=2{
+                        call=1{
+                            output 1
+                        }
+                        output 2
+                    }
+                    output 3
+                }
+                output 4
+            }
+            output 5
+        }
+
+procedure3
+        call n=5 {
+             output 5;
+             call n=4 {
+                 output 4
+                 call n=3{
+                     output 3
+                     call n=2{
+                         output 2
+                         call n=1{
+                            output 1
+                            output 1
+                          }
+                          output 2
+                      }
+                      output 3
+                  }
+                  output 4
+               }
+               output 5
+           }
